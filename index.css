@@ -55,13 +55,13 @@ body {
         background-size: cover;
         grid-row: 2;
         box-sizing: border-box;
-        padding: 1dvw;
         display: flex;
-        height: 50dvh;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         gap: 10px;
+        overflow: hidden;
+        position: relative;
 }
 
 .header h1 {
