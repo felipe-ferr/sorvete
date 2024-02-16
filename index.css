@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merienda&display=swap');
+
+:root {
+        --azul-claro: #DCF2F1;
+        --azul: #7FC7D9;
+        --azul-marinho: #365486;
+        --azul-escuro: #0F1035;
+}
+
+body {
+        margin: 0;
+        font-size: 17px;
+        background-color: var(--azul);
+}
+
+.grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.navbar {
+        grid-column: col-start / span 12;
+        background-color: var(--azul-marinho);
+        grid-row: 1;
+        box-sizing: border-box;
+        padding: 1dvw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.navbar ion-icon {
+        font-size: 2em;
+        color: var(--azul-claro);
+}
+
+.navbar .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        color: var(--azul-claro);
+}
+
+.navbar h1 {
+        font-family: "Lexend", sans-serif;
+        color: var(--azul-claro);
+}
+
+.icecream-logo {
+        width: 150px;
+        height: 100%;
+}
+
+.header {
+        grid-column: col-start / span 12;
+        background-color: var(--azul);
+        background-size: cover;
+        grid-row: 2;
+        box-sizing: border-box;
+        padding: 1dvw;
+        display: flex;
+        height: 70dvh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+.header h1 {
+        font-family: "Lexend", sans-serif;
+        color: var(--azul-claro);
+        margin: 0;
+        font-size: calc(2rem + 3vw);
+        text-align: center;
+}
+.header p{
+        font-family: "Lexend", sans-serif;
+        color: var(--azul-claro);
+        margin: 0;
+        text-align: center;
+        font-size: 2.2vw;
+}
+@media screen and (min-width: 601px) {
+ .header p{
+        font-size: 1vw;
+}
+
+}
