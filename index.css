@@ -58,9 +58,10 @@ body {
         padding: 1dvw;
         display: flex;
         height: 70dvh;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+        gap: 10px;
 }
 
 .header h1 {
@@ -75,7 +76,18 @@ body {
         color: var(--azul-claro);
         margin: 0;
         text-align: center;
-        font-size: 2.2vw;
+        font-size: 3vw;
+}
+.header a{
+        background-color: var(--azul-escuro);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--azul-claro);
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: "Lexend", sans-serif;
 }
 @media screen and (min-width: 601px) {
  .header p{
