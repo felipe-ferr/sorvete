@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merienda&display=swap');
 
 :root {
-        --azul-claro: #DCF2F1;
-        --azul: #7FC7D9;
-        --azul-dois: rgb(105, 190, 209);
-        --amarelo: #F9EBCF;
+        --vermelho: #EF645E;
+        --amarelo: #f7eedc;
         --azul-escuro: #0F1035;
 }
 
@@ -16,12 +14,13 @@ body {
 
 .grid-container {
         display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
+        grid-template-columns: repeat(12, [start] 1fr);
+
 }
 
 .navbar {
-        grid-column: col-start / span 12;
-        background-color: var(--azul-dois);
+        grid-column: start / span 12;
+        background-color: var(--vermelho);
         grid-row: 1;
         box-sizing: border-box;
         padding:  0 1dvw;
@@ -54,9 +53,9 @@ body {
         height: 100%;
 }
 .sidebar{
+        width: 50%;
         height: 100vh;
-        width: 50vw;
-        background-color: var(--azul-escuro);
+        background-color: var(--vermelho);
         flex-direction: column;
         z-index: 2;
         grid-row: 1;
@@ -72,14 +71,14 @@ body {
 }
 .sidebar a{
         font-family: "Lexend", sans-serif;
-        color: var(--azul-claro);
+        color: var(--amarelo);
         margin: 0;
         text-align: center;
         font-size: 4vw;
 }
 .header {
-        grid-column: col-start / span 12;
-        background-color: var(--azul);
+        grid-column: start / span 12;
+        background-color: var(--amarelo);
         background-size: cover;
         grid-row: 2;
         box-sizing: border-box;
@@ -88,34 +87,66 @@ body {
         align-items: center;
         flex-direction: column;
         gap: 10px;
-        overflow: hidden;
         position: relative;
+        border-bottom: 3px solid var(--vermelho);
 }
-
+.header-imagem{
+        width: 100%;
+}
 .header h1 {
         font-family: "Lexend", sans-serif;
-        color: var(--amarelo);
+        color: var(--vermelho);
         margin: 0;
         font-size: calc(2rem + 3vw);
         text-align: center;
 }
 .header p{
         font-family: "Lexend", sans-serif;
-        color: var(--azul-claro);
+        color: var(--vermelho);
         margin: 0;
         text-align: center;
         font-size: 4vw;
 }
 .header a{
-        background-color: var(--azul-escuro);
+        background-color: var(--vermelho);
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--azul-claro);
+        color: var(--amarelo);
         border-radius: 15px;
         text-decoration: none;
         font-family: "Lexend", sans-serif;
+}
+.sorvetes {
+        display: grid;
+        grid-column: start / span 12;
+        grid-template-columns: repeat(12, [col] 1fr);
+        background-color: var(--amarelo);
+        background-size: cover;
+        grid-row: 3;
+        box-sizing: border-box;
+        gap: 10px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 2vh 0;
+}
+.item1{
+        grid-column: 2 / span 10;
+        background-color: #EF645E;
+        height: 100px;
+ 
+}
+.item2{
+        grid-column: 2 / span 10;
+        background-color: #EF645E;
+        height: 100px;
+
+}
+.item3{
+        grid-column: 2 / span 10;
+        background-color: #EF645E;
+        height: 100px;
 }
 @media screen and (min-width: 601px) {
  .header p{
